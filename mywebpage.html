@@ -3,59 +3,105 @@
     <head>
         <title>My Webpage</title>
         <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <style type="text/css">
+        	form{
+        		font-size: 20px;        		
+        	}
+        	button{
+        		font-size: 20px;
+        		background-color: gray;
+        	}
+        	button::before{        		
+        		content: "\21d2 Click Here";
+        		font-weight: bold;
+        	}
+        	button:hover{
+        		background-color: green;
+        	}
+        	a::before{
+        		content: "\21d2 Click:";
+        		font-weight: bold;
+        	}
+        </style>
     </head>
     <body>
     	<h1>Welcome My Page!</h1>
     	<p>
     		<h1>
     			<a href="link1.html">Click Here</a>
+    			<a href="http://www.google.com">Click to Google</a>
     		</h1>
     	</p>
+    	<h2 id="Section Index">Section Index</h2>
     	<p>
-	        <div>	
-	        	<form>
-	        		<input type="text" placeholder="Full name" name="Name">
-	     	   		<button>Submit</button>
-	       		</form>
-	       		Above is an input form
-	        </div>
+	    	<ul>
+	        	<li> <a href="#Section1">Section1</a> </li>
+	        	<li> <a href="#Section2">Section2</a> </li>
+	        	<li> <a href="#Section3">Section3</a> </li>
+	        </ul>
+    	</p>
+        <h2 id="Section1">Section1</h2>
+	    	<p>
+		        <div>	
+		        	<form>
+		        		First name<br>
+		        		<input name="First name" type="text" placeholder="Firstname">
+		        		<br>
+		        		Last name<br>
+		        		<input type="text" name="Last name" placeholder="Lastname">
+		        		<br>
+		        		Age<br>
+		        		<input type="number" name="Age" placeholder="Age"> 
+		        		<br><br>
+		     	   		<button>Submit</button>
+		       		</form>
+		       		Above is an input form
+		        </div>
 
-        </p>
-        <p>
-        	<div id="top">
-        		This is <span class="bolden">top</span> div area predefined;
-        	</div>
-        	<div id="middle">
-        		This is <span class="bolden">middle</span> div area predefined;
-        	</div>
-        	<div id="bottom">
-        		This is <span class="bolden">bottom</span> div area predefined;
-        	</div>
-        </p>
-        <p>
-        	<table id="middle">
-        		<tr>
-	        		<th>Col 1-------</th>
-	        		<th>Col 2-------</th>
-	        		<th>COl 3-------</th>
-        		</tr>
-	        	<tr>
-	        		<td>1st row A</td>
-	        		<td>1st row B</td>
-	        		<td>1st row C</td>
-	        	</tr>
-	        	<tr>
-	        		<td>2nd row A</td>
-	        		<td>2nd row B</td>
-	        		<td>2nd row C</td>
-	        	</tr>
-	        	<tr>
-	        		<td>3rd row A</td>
-	        		<td>3rd row B</td>
-	        		<td>3rd row C</td>
-	        	</tr>
-	        </table>
-        </p>
+	        </p>
+    
+    	<h2 id="Section2">Section2</h2>
+    		<a href="#Section Index">Back to Index</a>
+	        <p>
+
+	        	<div id="top">
+	        		This is <span class="bolden">top</span> div area predefined;
+	        	</div>
+	        	<div id="middle">
+	        		This is <span class="bolden">middle</span> div area predefined;
+	        	</div>
+	        	<div id="bottom">
+	        		This is <span class="bolden">bottom</span> div area predefined;
+	        	</div>
+	        </p>
+    	
+    	<h2 id="Section3">Section3</h2>
+	        <p>
+	        	<table id="middle">
+	        		<tr>
+		        		<th>Col 1-------</th>
+		        		<th>Col 2-------</th>
+		        		<th>COl 3-------</th>
+	        		</tr>
+		        	<tr>
+		        		<td>1st row A</td>
+		        		<td>1st row B</td>
+		        		<td>1st row C</td>
+		        	</tr>
+		        	<tr>
+		        		<td>2nd row A</td>
+		        		<td>2nd row B</td>
+		        		<td>2nd row C</td>
+		        	</tr>
+		        	<tr>
+		        		<td>3rd row A</td>
+		        		<td>3rd row B</td>
+		        		<td>3rd row C</td>
+		        	</tr>
+		        </table>
+	        </p>
+	    </h2>
+
         <p>
         	<h3 id="middle">An Unordered list:</h3>
 	        <ul id="middle">
